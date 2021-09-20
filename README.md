@@ -75,7 +75,7 @@ const Page = () => {
       if (state !== undefined) return;
       setState(null);
       const result = await fetch(
-        `http://www.jma.go.jp/bosai/common/const/area.json`
+        `https://www.jma.go.jp/bosai/common/const/area.json`
       )
         .then((r) => r.json())
         .catch(() => null);
